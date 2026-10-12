@@ -1,0 +1,12 @@
+# Caddy reverse proxy: automatic HTTPS (Let's Encrypt) for the sslip.io hostname,
+# plain HTTP when the server is accessed by IP address.
+
+p-care-management.103-179-45-80.sslip.io {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}
+
+http://103.179.45.80 {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}
