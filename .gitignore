@@ -1,0 +1,21 @@
+# Dependencies and build output (Railway installs and builds these itself)
+node_modules/
+dist/
+
+# Runtime data: database, uploads, JWT secret, logs — never commit
+data/
+data-*/
+*.log
+
+# Secrets
+.env
+.env.*
+
+# Internal materials (CEO briefing PDF and its sources)
+docs/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
